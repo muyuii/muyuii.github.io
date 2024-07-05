@@ -1,2 +1,45 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://muyuii.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://muyuii.github.io</link></image><lastBuildDate>Fri, 05 Jul 2024 05:08:59 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://muyuii.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://muyuii.github.io</link></image><lastBuildDate>Fri, 05 Jul 2024 05:14:58 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>【软件测试】测试基础</title><link>https://muyuii.github.io/post/%E3%80%90-ruan-jian-ce-shi-%E3%80%91-ce-shi-ji-chu.html</link><description># 软件测试相关概念&#13;
+## 软件测试的定义、目的&#13;
+**定义：**&#13;
+使用技术手段验证软件是否符合使用需求&#13;
+**目的：**&#13;
+减少软件缺陷，保障软件质量&#13;
+## 7种测试分类及区别&#13;
+**按阶段：**&#13;
+1.单元测试（针对程序源代码）&#13;
+2.集成测试（接口/组装测试）&#13;
+3.系统测试（功能+非功能）&#13;
+4.验收测试（内测、公测）&#13;
+**按代码可见度：**&#13;
+1.黑盒测试（源代码不可见、UI功能可见/系统测试/功能测试）&#13;
+2.灰盒测试（部分源代码可见、功能不可见/接口测试）&#13;
+3.白盒测试（代码可见、UI功能不可见/单元测试）&#13;
+**其他：**&#13;
+性能测试（属专项测试）&#13;
+自动化测试（属功能测试）&#13;
+## 质量模型重点五项&#13;
+**1.功能性&#13;
+2.性能&#13;
+3.兼容性&#13;
+4.易用性&#13;
+5.可靠性&#13;
+6.安全**&#13;
+7.可维护性&#13;
+8.可移植性&#13;
+## 测试流程6步骤&#13;
+1.需求评审&#13;
+2.计划编写&#13;
+3.用例设计&#13;
+4.用例执行&#13;
+5.缺陷管理&#13;
+6.测试报告&#13;
+## 测试模板8要素&#13;
+1.用例编号&#13;
+2.用例标题&#13;
+3.项目/模块&#13;
+4.优先级&#13;
+5.前置条件&#13;
+6.测试步骤&#13;
+7.测试数据&#13;
+8.预期结果。</description><guid isPermaLink="true">https://muyuii.github.io/post/%E3%80%90-ruan-jian-ce-shi-%E3%80%91-ce-shi-ji-chu.html</guid><pubDate>Fri, 05 Jul 2024 05:08:38 +0000</pubDate></item></channel></rss>
