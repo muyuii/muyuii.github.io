@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>muyuii</title><link>https://muyuii.github.io</link><description>祝我好运</description><copyright>muyuii</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://muyuii.github.io/zwhyi.svg</url><title>avatar</title><link>https://muyuii.github.io</link></image><lastBuildDate>Fri, 05 Jul 2024 11:05:21 +0000</lastBuildDate><managingEditor>muyuii</managingEditor><ttl>60</ttl><webMaster>muyuii</webMaster><item><title>【软件测试】用例设计方法</title><link>https://muyuii.github.io/post/%E3%80%90-ruan-jian-ce-shi-%E3%80%91-yong-li-she-ji-fang-fa.html</link><description>## 等价类划分法&#13;
-常用于输入框、下拉列表、单选复选框&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>muyuii</title><link>https://muyuii.github.io</link><description>祝我好运</description><copyright>muyuii</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://muyuii.github.io/zwhyi.svg</url><title>avatar</title><link>https://muyuii.github.io</link></image><lastBuildDate>Tue, 09 Jul 2024 07:18:35 +0000</lastBuildDate><managingEditor>muyuii</managingEditor><ttl>60</ttl><webMaster>muyuii</webMaster><item><title>【软件测试】用例设计方法</title><link>https://muyuii.github.io/post/%E3%80%90-ruan-jian-ce-shi-%E3%80%91-yong-li-she-ji-fang-fa.html</link><description>## 等价类划分法&#13;
+常用于**输入框、下拉列表、单选复选框**&#13;
 **有效等价类**&#13;
 **无效等价类**&#13;
 从长度、类型、规则考虑&#13;
@@ -10,7 +10,13 @@
 有效等价类：8位数字&#13;
 无效等价类：4位数字、8位非数字、12位数字&#13;
 &#13;
-## 边界值分析法。</description><guid isPermaLink="true">https://muyuii.github.io/post/%E3%80%90-ruan-jian-ce-shi-%E3%80%91-yong-li-she-ji-fang-fa.html</guid><pubDate>Fri, 05 Jul 2024 11:01:25 +0000</pubDate></item><item><title>【软件测试】测试基础</title><link>https://muyuii.github.io/post/%E3%80%90-ruan-jian-ce-shi-%E3%80%91-ce-shi-ji-chu.html</link><description># 软件测试相关概念&#13;
+## 边界值分析法&#13;
+选取**正好等于、正好大于、正好小于**边界的值作为测试数据&#13;
+上点：边界上的点（正好等于）&#13;
+离点：距离上点最近的点（正好大于/小于）&#13;
+内点：范围内的点区间（范围内的数据）&#13;
+![image](https://github.com/muyuii/muyuii.github.io/assets/79619919/6ffffbf8-dc17-4a2a-8ce9-d2db88944cae)&#13;
+。</description><guid isPermaLink="true">https://muyuii.github.io/post/%E3%80%90-ruan-jian-ce-shi-%E3%80%91-yong-li-she-ji-fang-fa.html</guid><pubDate>Fri, 05 Jul 2024 11:01:25 +0000</pubDate></item><item><title>【软件测试】测试基础</title><link>https://muyuii.github.io/post/%E3%80%90-ruan-jian-ce-shi-%E3%80%91-ce-shi-ji-chu.html</link><description># 软件测试相关概念&#13;
 ## 软件测试的定义、目的&#13;
 **定义：**&#13;
 使用技术手段验证软件是否符合使用需求&#13;
