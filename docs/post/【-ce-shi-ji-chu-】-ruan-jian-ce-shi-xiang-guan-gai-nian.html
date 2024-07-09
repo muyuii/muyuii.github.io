@@ -9,95 +9,101 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="## 等价类划分法
-常用于**输入框、下拉列表、单选复选框**
-**有效等价类**
-**无效等价类**
-从长度、类型、规则考虑
-
-例子：
-账号长度为6-10位数字
-有效等价类：8位数字
-无效等价类：4位数字、8位非数字、12位数字
-
-## 边界值分析法
-选取**正好等于、正好大于、正好小于**边界的值作为测试数据
-上点：边界上的点（正好等于）
-离点：距离上点最近的点（正好大于/小于）
-内点：范围内的点区间（范围内的数据）
-![image](https://github.com/muyuii/muyuii.github.io/assets/79619919/6ffffbf8-dc17-4a2a-8ce9-d2db88944cae)
-步骤：
-1.明确需求
-2.确定有效、无效等价类（针对类型）
-3.确定边界范围值
-4.提取数据编写测试用例
-
-例子：
-
-标题长度要求大于0，小于等于30个字符
-上点：0、30
-离点：-1、1、29、31
-内点：15
-测试用例：
-![image](https://github.com/muyuii/muyuii.github.io/assets/79619919/8e4fe3b7-ed34-4860-985f-469b8a22b6d3)
-
-QQ账号要求6-10位自然数
-![image](https://github.com/muyuii/muyuii.github.io/assets/79619919/2e66e603-e1cf-468a-aa10-8de3a27aee29)
-
-优化：
-必选：上点、内点（验证范围连续性）
-看情况：离点：开內闭外
-
-使用场景
-常见词语：大小、尺寸、重量、最大、至少
-典型代表：有边界范围的输入框。">
-<meta property="og:title" content="【软件测试】用例设计方法（等价类、边界值）">
-<meta property="og:description" content="## 等价类划分法
-常用于**输入框、下拉列表、单选复选框**
-**有效等价类**
-**无效等价类**
-从长度、类型、规则考虑
-
-例子：
-账号长度为6-10位数字
-有效等价类：8位数字
-无效等价类：4位数字、8位非数字、12位数字
-
-## 边界值分析法
-选取**正好等于、正好大于、正好小于**边界的值作为测试数据
-上点：边界上的点（正好等于）
-离点：距离上点最近的点（正好大于/小于）
-内点：范围内的点区间（范围内的数据）
-![image](https://github.com/muyuii/muyuii.github.io/assets/79619919/6ffffbf8-dc17-4a2a-8ce9-d2db88944cae)
-步骤：
-1.明确需求
-2.确定有效、无效等价类（针对类型）
-3.确定边界范围值
-4.提取数据编写测试用例
-
-例子：
-
-标题长度要求大于0，小于等于30个字符
-上点：0、30
-离点：-1、1、29、31
-内点：15
-测试用例：
-![image](https://github.com/muyuii/muyuii.github.io/assets/79619919/8e4fe3b7-ed34-4860-985f-469b8a22b6d3)
-
-QQ账号要求6-10位自然数
-![image](https://github.com/muyuii/muyuii.github.io/assets/79619919/2e66e603-e1cf-468a-aa10-8de3a27aee29)
-
-优化：
-必选：上点、内点（验证范围连续性）
-看情况：离点：开內闭外
-
-使用场景
-常见词语：大小、尺寸、重量、最大、至少
-典型代表：有边界范围的输入框。">
+<meta name="description" content="## 软件测试的定义、目的
+**定义：**
+使用技术手段验证软件是否符合使用需求
+**目的：**
+减少软件缺陷，保障软件质量
+## 7种测试分类及区别
+**按阶段：**
+1.单元测试（针对程序源代码）
+2.集成测试（接口/组装测试）
+3.系统测试（功能+非功能）
+4.验收测试（内测、公测）
+**按代码可见度：**
+1.黑盒测试（源代码不可见、UI功能可见/系统测试/功能测试）
+2.灰盒测试（部分源代码可见、功能不可见/接口测试）
+3.白盒测试（代码可见、UI功能不可见/单元测试）
+**其他：**
+性能测试（属专项测试）
+自动化测试（属功能测试）
+## 质量模型重点五项
+**1.功能性
+2.性能
+3.兼容性
+4.易用性
+5.可靠性
+6.安全**
+7.可维护性
+8.可移植性
+## 测试流程6步骤
+1.需求评审
+2.计划编写
+3.用例设计
+4.用例执行
+5.缺陷管理
+6.测试报告
+## 测试模板8要素
+1.用例编号
+2.用例标题
+3.项目/模块
+4.优先级
+5.前置条件
+6.测试步骤
+7.测试数据
+8.预期结果
+## QQ登录测试用例例子
+<img width='798' alt='qq_login' src='https://github.com/muyuii/muyuii.github.io/assets/79619919/7a73f42e-de09-4c28-b4bf-46ed4c133833'>。">
+<meta property="og:title" content="【测试基础】软件测试相关概念">
+<meta property="og:description" content="## 软件测试的定义、目的
+**定义：**
+使用技术手段验证软件是否符合使用需求
+**目的：**
+减少软件缺陷，保障软件质量
+## 7种测试分类及区别
+**按阶段：**
+1.单元测试（针对程序源代码）
+2.集成测试（接口/组装测试）
+3.系统测试（功能+非功能）
+4.验收测试（内测、公测）
+**按代码可见度：**
+1.黑盒测试（源代码不可见、UI功能可见/系统测试/功能测试）
+2.灰盒测试（部分源代码可见、功能不可见/接口测试）
+3.白盒测试（代码可见、UI功能不可见/单元测试）
+**其他：**
+性能测试（属专项测试）
+自动化测试（属功能测试）
+## 质量模型重点五项
+**1.功能性
+2.性能
+3.兼容性
+4.易用性
+5.可靠性
+6.安全**
+7.可维护性
+8.可移植性
+## 测试流程6步骤
+1.需求评审
+2.计划编写
+3.用例设计
+4.用例执行
+5.缺陷管理
+6.测试报告
+## 测试模板8要素
+1.用例编号
+2.用例标题
+3.项目/模块
+4.优先级
+5.前置条件
+6.测试步骤
+7.测试数据
+8.预期结果
+## QQ登录测试用例例子
+<img width='798' alt='qq_login' src='https://github.com/muyuii/muyuii.github.io/assets/79619919/7a73f42e-de09-4c28-b4bf-46ed4c133833'>。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://muyuii.github.io/post/%E3%80%90-ruan-jian-ce-shi-%E3%80%91-yong-li-she-ji-fang-fa-%EF%BC%88-deng-jia-lei-%E3%80%81-bian-jie-zhi-%EF%BC%89.html">
+<meta property="og:url" content="https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-ruan-jian-ce-shi-xiang-guan-gai-nian.html">
 <meta property="og:image" content="https://muyuii.github.io/zwhyi.svg">
-<title>【软件测试】用例设计方法（等价类、边界值）</title>
+<title>【测试基础】软件测试相关概念</title>
 
 
 </head>
@@ -128,7 +134,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 
 <body>
     <div id="header">
-<h1 class="postTitle">【软件测试】用例设计方法（等价类、边界值）</h1>
+<h1 class="postTitle">【测试基础】软件测试相关概念</h1>
 <div class="title-right">
     <a href="https://muyuii.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
@@ -136,7 +142,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         </svg>
     </a>
     
-    <a href="https://github.com/muyuii/muyuii.github.io/issues/2" target="_blank" class="btn btn-invisible circle" title="Issue">
+    <a href="https://github.com/muyuii/muyuii.github.io/issues/1" target="_blank" class="btn btn-invisible circle" title="Issue">
         <svg class="octicon" width="16" height="16">
             <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
@@ -152,41 +158,51 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><h2>等价类划分法</h2>
-<p>常用于<strong>输入框、下拉列表、单选复选框</strong><br>
-<strong>有效等价类</strong><br>
-<strong>无效等价类</strong><br>
-从长度、类型、规则考虑</p>
-<p>例子：<br>
-账号长度为6-10位数字<br>
-有效等价类：8位数字<br>
-无效等价类：4位数字、8位非数字、12位数字</p>
-<h2>边界值分析法</h2>
-<p>选取<strong>正好等于、正好大于、正好小于</strong>边界的值作为测试数据<br>
-上点：边界上的点（正好等于）<br>
-离点：距离上点最近的点（正好大于/小于）<br>
-内点：范围内的点区间（范围内的数据）<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/muyuii/muyuii.github.io/assets/79619919/6ffffbf8-dc17-4a2a-8ce9-d2db88944cae"><img src="https://github.com/muyuii/muyuii.github.io/assets/79619919/6ffffbf8-dc17-4a2a-8ce9-d2db88944cae" alt="image" style="max-width: 100%;"></a><br>
-步骤：<br>
-1.明确需求<br>
-2.确定有效、无效等价类（针对类型）<br>
-3.确定边界范围值<br>
-4.提取数据编写测试用例</p>
-<p>例子：</p>
-<p>标题长度要求大于0，小于等于30个字符<br>
-上点：0、30<br>
-离点：-1、1、29、31<br>
-内点：15<br>
-测试用例：<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/muyuii/muyuii.github.io/assets/79619919/8e4fe3b7-ed34-4860-985f-469b8a22b6d3"><img src="https://github.com/muyuii/muyuii.github.io/assets/79619919/8e4fe3b7-ed34-4860-985f-469b8a22b6d3" alt="image" style="max-width: 100%;"></a></p>
-<p>QQ账号要求6-10位自然数<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/muyuii/muyuii.github.io/assets/79619919/2e66e603-e1cf-468a-aa10-8de3a27aee29"><img src="https://github.com/muyuii/muyuii.github.io/assets/79619919/2e66e603-e1cf-468a-aa10-8de3a27aee29" alt="image" style="max-width: 100%;"></a></p>
-<p>优化：<br>
-必选：上点、内点（验证范围连续性）<br>
-看情况：离点：开內闭外</p>
-<p>使用场景<br>
-常见词语：大小、尺寸、重量、最大、至少<br>
-典型代表：有边界范围的输入框</p></div>
+<div class="markdown-body" id="postBody"><h2>软件测试的定义、目的</h2>
+<p><strong>定义：</strong><br>
+使用技术手段验证软件是否符合使用需求<br>
+<strong>目的：</strong><br>
+减少软件缺陷，保障软件质量</p>
+<h2>7种测试分类及区别</h2>
+<p><strong>按阶段：</strong><br>
+1.单元测试（针对程序源代码）<br>
+2.集成测试（接口/组装测试）<br>
+3.系统测试（功能+非功能）<br>
+4.验收测试（内测、公测）<br>
+<strong>按代码可见度：</strong><br>
+1.黑盒测试（源代码不可见、UI功能可见/系统测试/功能测试）<br>
+2.灰盒测试（部分源代码可见、功能不可见/接口测试）<br>
+3.白盒测试（代码可见、UI功能不可见/单元测试）<br>
+<strong>其他：</strong><br>
+性能测试（属专项测试）<br>
+自动化测试（属功能测试）</p>
+<h2>质量模型重点五项</h2>
+<p><strong>1.功能性<br>
+2.性能<br>
+3.兼容性<br>
+4.易用性<br>
+5.可靠性<br>
+6.安全</strong><br>
+7.可维护性<br>
+8.可移植性</p>
+<h2>测试流程6步骤</h2>
+<p>1.需求评审<br>
+2.计划编写<br>
+3.用例设计<br>
+4.用例执行<br>
+5.缺陷管理<br>
+6.测试报告</p>
+<h2>测试模板8要素</h2>
+<p>1.用例编号<br>
+2.用例标题<br>
+3.项目/模块<br>
+4.优先级<br>
+5.前置条件<br>
+6.测试步骤<br>
+7.测试数据<br>
+8.预期结果</p>
+<h2>QQ登录测试用例例子</h2>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/muyuii/muyuii.github.io/assets/79619919/7a73f42e-de09-4c28-b4bf-46ed4c133833"><img width="798" alt="qq_login" src="https://github.com/muyuii/muyuii.github.io/assets/79619919/7a73f42e-de09-4c28-b4bf-46ed4c133833" style="max-width: 100%;"></a></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 </div>

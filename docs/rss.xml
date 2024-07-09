@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>muyuii</title><link>https://muyuii.github.io</link><description>祝我好运</description><copyright>muyuii</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://muyuii.github.io/zwhyi.svg</url><title>avatar</title><link>https://muyuii.github.io</link></image><lastBuildDate>Tue, 09 Jul 2024 08:57:14 +0000</lastBuildDate><managingEditor>muyuii</managingEditor><ttl>60</ttl><webMaster>muyuii</webMaster><item><title>【测试基础】用例设计方法（判定表）</title><link>https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-yong-li-she-ji-fang-fa-%EF%BC%88-pan-ding-biao-%EF%BC%89.html</link><description>## 判定表&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>muyuii</title><link>https://muyuii.github.io</link><description>祝我好运</description><copyright>muyuii</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://muyuii.github.io/zwhyi.svg</url><title>avatar</title><link>https://muyuii.github.io</link></image><lastBuildDate>Tue, 09 Jul 2024 09:10:30 +0000</lastBuildDate><managingEditor>muyuii</managingEditor><ttl>60</ttl><webMaster>muyuii</webMaster><item><title>【测试基础】用例设计方法（判定表）</title><link>https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-yong-li-she-ji-fang-fa-%EF%BC%88-pan-ding-biao-%EF%BC%89.html</link><description>## 判定表&#13;
 。</description><guid isPermaLink="true">https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-yong-li-she-ji-fang-fa-%EF%BC%88-pan-ding-biao-%EF%BC%89.html</guid><pubDate>Tue, 09 Jul 2024 08:52:36 +0000</pubDate></item><item><title>【测试基础】用例设计方法（等价类、边界值）</title><link>https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-yong-li-she-ji-fang-fa-%EF%BC%88-deng-jia-lei-%E3%80%81-bian-jie-zhi-%EF%BC%89.html</link><description>## 等价类划分法&#13;
 常用于**输入框、下拉列表、单选复选框**&#13;
 **有效等价类**&#13;
@@ -41,8 +41,7 @@ QQ账号要求6-10位自然数&#13;
 &#13;
 使用场景&#13;
 常见词语：大小、尺寸、重量、最大、至少&#13;
-典型代表：有边界范围的输入框。</description><guid isPermaLink="true">https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-yong-li-she-ji-fang-fa-%EF%BC%88-deng-jia-lei-%E3%80%81-bian-jie-zhi-%EF%BC%89.html</guid><pubDate>Fri, 05 Jul 2024 11:01:25 +0000</pubDate></item><item><title>【软件测试】测试基础</title><link>https://muyuii.github.io/post/%E3%80%90-ruan-jian-ce-shi-%E3%80%91-ce-shi-ji-chu.html</link><description># 软件测试相关概念&#13;
-## 软件测试的定义、目的&#13;
+典型代表：有边界范围的输入框。</description><guid isPermaLink="true">https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-yong-li-she-ji-fang-fa-%EF%BC%88-deng-jia-lei-%E3%80%81-bian-jie-zhi-%EF%BC%89.html</guid><pubDate>Fri, 05 Jul 2024 11:01:25 +0000</pubDate></item><item><title>【测试基础】软件测试相关概念</title><link>https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-ruan-jian-ce-shi-xiang-guan-gai-nian.html</link><description>## 软件测试的定义、目的&#13;
 **定义：**&#13;
 使用技术手段验证软件是否符合使用需求&#13;
 **目的：**&#13;
@@ -86,4 +85,4 @@ QQ账号要求6-10位自然数&#13;
 7.测试数据&#13;
 8.预期结果&#13;
 ## QQ登录测试用例例子&#13;
-&lt;img width='798' alt='qq_login' src='https://github.com/muyuii/muyuii.github.io/assets/79619919/7a73f42e-de09-4c28-b4bf-46ed4c133833'&gt;。</description><guid isPermaLink="true">https://muyuii.github.io/post/%E3%80%90-ruan-jian-ce-shi-%E3%80%91-ce-shi-ji-chu.html</guid><pubDate>Fri, 05 Jul 2024 05:08:38 +0000</pubDate></item></channel></rss>
+&lt;img width='798' alt='qq_login' src='https://github.com/muyuii/muyuii.github.io/assets/79619919/7a73f42e-de09-4c28-b4bf-46ed4c133833'&gt;。</description><guid isPermaLink="true">https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-ruan-jian-ce-shi-xiang-guan-gai-nian.html</guid><pubDate>Fri, 05 Jul 2024 05:08:38 +0000</pubDate></item></channel></rss>
