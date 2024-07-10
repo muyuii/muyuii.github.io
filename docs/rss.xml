@@ -1,5 +1,26 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>muyuii</title><link>https://muyuii.github.io</link><description>祝我好运</description><copyright>muyuii</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://muyuii.github.io/zwhyi.svg</url><title>avatar</title><link>https://muyuii.github.io</link></image><lastBuildDate>Wed, 10 Jul 2024 14:13:44 +0000</lastBuildDate><managingEditor>muyuii</managingEditor><ttl>60</ttl><webMaster>muyuii</webMaster><item><title>【测试基础】用例设计方法（判定表、场景法）</title><link>https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-yong-li-she-ji-fang-fa-%EF%BC%88-pan-ding-biao-%E3%80%81-chang-jing-fa-%EF%BC%89.html</link><description>## 判定表&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>muyuii</title><link>https://muyuii.github.io</link><description>祝我好运</description><copyright>muyuii</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://muyuii.github.io/zwhyi.svg</url><title>avatar</title><link>https://muyuii.github.io</link></image><lastBuildDate>Wed, 10 Jul 2024 14:35:26 +0000</lastBuildDate><managingEditor>muyuii</managingEditor><ttl>60</ttl><webMaster>muyuii</webMaster><item><title>【测试基础】用例设计方法（判定表、场景法）</title><link>https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-yong-li-she-ji-fang-fa-%EF%BC%88-pan-ding-biao-%E3%80%81-chang-jing-fa-%EF%BC%89.html</link><description>## 判定表&#13;
+条件桩：列出问题中的所有条件&#13;
+动作桩：列出问题中可能的操作&#13;
+条件项：列出条件对应的取值&#13;
+动作项：列出条件项的各种取值应采取的动作结果&#13;
+规则数=取值的条件数次方，如n条件，每条件两取值，则有2的n次方&#13;
+&#13;
+例子：&#13;
+![image](https://github.com/muyuii/muyuii.github.io/assets/79619919/a1543906-4acc-47e3-943d-cf60aa5217db)&#13;
+&#13;
+## 场景法（流程图法）&#13;
+![image](https://github.com/muyuii/muyuii.github.io/assets/79619919/1f4b907f-b31e-4bd2-850f-cf2aa7ca157b)&#13;
+意义：&#13;
+用户使用角度：用户使用的一般不是单功能，而是多功能组合&#13;
+测试人员角度：平时测试是单功能测试，容易忽略多功能组合测试&#13;
+&#13;
+例子：&#13;
+&lt;img width='387' alt='image' src='https://github.com/muyuii/muyuii.github.io/assets/79619919/8b64abc1-74db-4a1e-aa05-e018026efd2c'&gt;&#13;
+流程图：&#13;
+&lt;img width='522' alt='image' src='https://github.com/muyuii/muyuii.github.io/assets/79619919/40d910f6-760e-4610-9360-a44bf614aceb'&gt;&#13;
+用例：&#13;
+![image](https://github.com/muyuii/muyuii.github.io/assets/79619919/849318ae-204e-48e7-82b5-63d0b6645df6)&#13;
 。</description><guid isPermaLink="true">https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-yong-li-she-ji-fang-fa-%EF%BC%88-pan-ding-biao-%E3%80%81-chang-jing-fa-%EF%BC%89.html</guid><pubDate>Tue, 09 Jul 2024 08:52:36 +0000</pubDate></item><item><title>【测试基础】用例设计方法（等价类、边界值）</title><link>https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-yong-li-she-ji-fang-fa-%EF%BC%88-deng-jia-lei-%E3%80%81-bian-jie-zhi-%EF%BC%89.html</link><description>## 等价类划分法&#13;
 常用于**输入框、下拉列表、单选复选框**&#13;
 **有效等价类**&#13;
