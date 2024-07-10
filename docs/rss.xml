@@ -1,5 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>muyuii</title><link>https://muyuii.github.io</link><description>祝我好运</description><copyright>muyuii</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://muyuii.github.io/zwhyi.svg</url><title>avatar</title><link>https://muyuii.github.io</link></image><lastBuildDate>Wed, 10 Jul 2024 14:35:26 +0000</lastBuildDate><managingEditor>muyuii</managingEditor><ttl>60</ttl><webMaster>muyuii</webMaster><item><title>【测试基础】用例设计方法（判定表、场景法）</title><link>https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-yong-li-she-ji-fang-fa-%EF%BC%88-pan-ding-biao-%E3%80%81-chang-jing-fa-%EF%BC%89.html</link><description>## 判定表&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>muyuii</title><link>https://muyuii.github.io</link><description>祝我好运</description><copyright>muyuii</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://muyuii.github.io/zwhyi.svg</url><title>avatar</title><link>https://muyuii.github.io</link></image><lastBuildDate>Wed, 10 Jul 2024 15:48:21 +0000</lastBuildDate><managingEditor>muyuii</managingEditor><ttl>60</ttl><webMaster>muyuii</webMaster><item><title>【测试基础】用例设计方法（错误推荐法、冒烟）</title><link>https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-yong-li-she-ji-fang-fa-%EF%BC%88-cuo-wu-tui-jian-fa-%E3%80%81-mao-yan-%EF%BC%89.html</link><description>## 错误推荐法&#13;
+定义：通过经验推测系统可能出现的问题&#13;
+目的：避免项目不具备可测性，而投入的时间和人力成本&#13;
+&#13;
+## 冒烟测试&#13;
+定义：批量开始测试之前，执行业务正向用例，验证软件是否具备可测性&#13;
+场景：&#13;
+1、时间紧时根据经验找出易出错模块重点测试&#13;
+2、时间宽裕时，用该方法列出之前出现问题较多的模块再次测试&#13;
+。</description><guid isPermaLink="true">https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-yong-li-she-ji-fang-fa-%EF%BC%88-cuo-wu-tui-jian-fa-%E3%80%81-mao-yan-%EF%BC%89.html</guid><pubDate>Wed, 10 Jul 2024 15:47:48 +0000</pubDate></item><item><title>【测试基础】用例设计方法（判定表、场景法）</title><link>https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-yong-li-she-ji-fang-fa-%EF%BC%88-pan-ding-biao-%E3%80%81-chang-jing-fa-%EF%BC%89.html</link><description>## 判定表&#13;
 条件桩：列出问题中的所有条件&#13;
 动作桩：列出问题中可能的操作&#13;
 条件项：列出条件对应的取值&#13;
