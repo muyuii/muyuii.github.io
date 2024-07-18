@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>muyuii</title><link>https://muyuii.github.io</link><description>祝我好运</description><copyright>muyuii</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://muyuii.github.io/zwhyi.svg</url><title>avatar</title><link>https://muyuii.github.io</link></image><lastBuildDate>Mon, 15 Jul 2024 14:03:59 +0000</lastBuildDate><managingEditor>muyuii</managingEditor><ttl>60</ttl><webMaster>muyuii</webMaster><item><title>【测试基础】缺陷相关概念</title><link>https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-que-xian-xiang-guan-gai-nian.html</link><description>## 缺陷的定义及标准&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>muyuii</title><link>https://muyuii.github.io</link><description>祝我好运</description><copyright>muyuii</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://muyuii.github.io/zwhyi.svg</url><title>avatar</title><link>https://muyuii.github.io</link></image><lastBuildDate>Thu, 18 Jul 2024 03:56:03 +0000</lastBuildDate><managingEditor>muyuii</managingEditor><ttl>60</ttl><webMaster>muyuii</webMaster><item><title>【测试基础】缺陷相关概念</title><link>https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-que-xian-xiang-guan-gai-nian.html</link><description>## 缺陷的定义及标准&#13;
 定义：&#13;
 软件在使用的过程中出现的任何问题&#13;
 标准：&#13;
@@ -29,7 +29,15 @@
 4.bug类型（代码错误、兼容性问题、设计缺陷、性能问题等）&#13;
 5.缺陷状态（new-新建、open-打开、close-关闭、postponed-延期）&#13;
 ## 缺陷类型&#13;
-功能错误、界面（UI）错误、兼容性、数据、易用性、改进建议、架构。</description><guid isPermaLink="true">https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-que-xian-xiang-guan-gai-nian.html</guid><pubDate>Mon, 15 Jul 2024 14:03:35 +0000</pubDate></item><item><title>【测试基础】用例设计方法（错误推荐法、冒烟）</title><link>https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-yong-li-she-ji-fang-fa-%EF%BC%88-cuo-wu-tui-jian-fa-%E3%80%81-mao-yan-%EF%BC%89.html</link><description>## 错误推荐法&#13;
+功能错误、界面（UI）错误、兼容性、数据、易用性、改进建议、架构&#13;
+## 缺陷标题&#13;
+三种思路：&#13;
+1、测试数据＋实际结果（预期结果）&#13;
+2、测试数据＋预期结果（实际结果）&#13;
+3、测试数据＋实际结果（需求）&#13;
+## 缺陷管理流程&#13;
+![image](https://github.com/user-attachments/assets/1e4da676-894d-4efd-83a9-ad4fa5747787)&#13;
+。</description><guid isPermaLink="true">https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-que-xian-xiang-guan-gai-nian.html</guid><pubDate>Mon, 15 Jul 2024 14:03:35 +0000</pubDate></item><item><title>【测试基础】用例设计方法（错误推荐法、冒烟）</title><link>https://muyuii.github.io/post/%E3%80%90-ce-shi-ji-chu-%E3%80%91-yong-li-she-ji-fang-fa-%EF%BC%88-cuo-wu-tui-jian-fa-%E3%80%81-mao-yan-%EF%BC%89.html</link><description>## 错误推荐法&#13;
 定义：通过经验推测系统可能出现的问题&#13;
 目的：避免项目不具备可测性，而投入的时间和人力成本&#13;
 &#13;
