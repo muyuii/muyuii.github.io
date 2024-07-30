@@ -27,11 +27,11 @@ fedora
 查看ip地址 ：**ifconfig**
 查看ssh端口（默认22）：**netstat -anpt|grep sshd**
 远程连接工具：xshell、finalshell
-## Linux命令
+## Linux命令（重点）
 ### 命令帮助
 **-help**（简洁） 例：ls -help
 **man** （详细）例：man help
-### 查看目录内容（重点）
+### 查看目录内容
 **ls**
 **-l**：以列表形式显示目录或文件的内容
 **-a**：显示所有文件或目录，包括隐藏文件
@@ -48,3 +48,5 @@ ls -lha /usr/bin
 [abcd]:表示匹配括号内(a、b、c、d中的)任意的一个字符
 [a-d]:a-d表示的是从a到d的范围，也就是a、b、c、d.从中匹配任意一个字符。
 ![image](https://github.com/user-attachments/assets/e3635032-8e9c-48bb-9fc7-c269bbd5f0f8)
+### 目录切换
+**cd**
