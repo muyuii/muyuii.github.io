@@ -40,7 +40,7 @@ fedora
 查看ssh端口（默认22）：**netstat -anpt|grep sshd**
 远程连接工具：xshell、finalshell
 ## Linux命令（重点）
-### 命令帮助
+### 命令帮助（了解）
 **-help**（简洁） 例：ls -help
 **man** （详细）例：man help
 ### 文件或目录常用命令
@@ -87,7 +87,7 @@ fedora
 查看ssh端口（默认22）：**netstat -anpt|grep sshd**
 远程连接工具：xshell、finalshell
 ## Linux命令（重点）
-### 命令帮助
+### 命令帮助（了解）
 **-help**（简洁） 例：ls -help
 **man** （详细）例：man help
 ### 文件或目录常用命令
@@ -192,7 +192,7 @@ fedora</p>
 查看ssh端口（默认22）：<strong>netstat -anpt|grep sshd</strong><br>
 远程连接工具：xshell、finalshell</p>
 <h2>Linux命令（重点）</h2>
-<h3>命令帮助</h3>
+<h3>命令帮助（了解）</h3>
 <p><strong>-help</strong>（简洁） 例：ls -help<br>
 <strong>man</strong> （详细）例：man help</p>
 <h3>文件或目录常用命令</h3>
@@ -210,15 +210,28 @@ ls -lha /usr/bin</p>
 ＊：表示匹配0到多个任意字符<br>
 ？：表示匹配单个任意字符<br>
 [abcd]:表示匹配括号内(a、b、c、d中的)任意的一个字符<br>
-[a-d]:a-d表示的是从a到d的范围，也就是a、b、c、d.从中匹配任意一个字符。<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/e3635032-8e9c-48bb-9fc7-c269bbd5f0f8"><img src="https://github.com/user-attachments/assets/e3635032-8e9c-48bb-9fc7-c269bbd5f0f8" alt="image" style="max-width: 100%;"></a></p>
+[a-d]:a-d表示的是从a到d的范围，也就是a、b、c、d.从中匹配任意一个字符。</p>
 <h4>目录切换</h4>
 <p><strong>pwd</strong>：显示当前目录<br>
 <strong>cd</strong><br>
 **cd ~**：返回家目录，root用户为/root，其余为/home/用户<br>
 <strong>cd ..</strong>：返回上一级目录<br>
 <strong>cd -</strong>：返回上一次目录<br>
-<strong>cd .与cd ./</strong>：当前路径</p></div>
+<strong>cd .与cd ./</strong>：当前路径</p>
+<h4>创建文件（了解）</h4>
+<p><strong>touch 文件名 文件名（多个文件名之间用空格隔开）</strong>：若文件名不存在，创建文件；若存在，更新文件修改时间</p>
+<h4>创建目录</h4>
+<p><strong>mkdir 目录名 目录名（多个目录间用空格隔开）</strong><br>
+<strong>mkdir -p</strong>：帮助你直接将所需要的目录(包含上一级目录)递归创建起来。例：mkdir -p test1/test2/test3<br>
+<strong>mkdir -m</strong>：配置文件的权限喔！直接配置，不需要看默认权限 (umask) 的脸色</p>
+<h4>删除空的目录</h4>
+<p><strong>rmdir 目录名 目录名（多个目录间用空格隔开）</strong><br>
+<strong>rmdir -p</strong>：帮助你直接将所需要的目录(包含上一级目录)删除。例：rmdir -p test1/test2/test3</p>
+<h4>删除文件或目录</h4>
+<p>-f ：force ，强制删除文件，忽略不存在的文件，不会出现警告信息；<br>
+-i ：互动模式，在删除前会询问是否删除<strong>建议都带上-i，因为rm删除不可恢复</strong><br>
+-r ：递归删除啊！最常用在目录的删除，删除目录及目录下的所有内容</p>
+<h4>文件或目录复制</h4></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 </div>
