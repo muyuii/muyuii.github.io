@@ -218,8 +218,7 @@ ls -lha /usr/bin</p>
 [abcd]:表示匹配括号内(a、b、c、d中的)任意的一个字符<br>
 [a-d]:a-d表示的是从a到d的范围，也就是a、b、c、d.从中匹配任意一个字符。</p>
 <h4>目录切换</h4>
-<p><strong>pwd</strong>：显示当前目录<br>
-<strong>cd</strong><br>
+<p><strong>cd</strong><br>
 **cd ~**：返回家目录，root用户为/root，其余为/home/用户<br>
 <strong>cd ..</strong>：返回上一级目录<br>
 <strong>cd -</strong>：返回上一次目录<br>
@@ -267,7 +266,30 @@ ls -lha /usr/bin</p>
 grep正则表达式<br>
 <strong>^a</strong>：表示搜索的文件内容行是以a开头<br>
 <strong>ke$</strong>：表示搜索的文件内容行是以ke结尾<br>
-<strong>[Ss]igna[Ll]</strong>：匹配口中的任意一个字符，搜寻匹配单词为 SignaL、Signal、signaL、signal的行</p></div>
+<strong>[Ss]igna[Ll]</strong>：匹配[ ]中的任意一个字符，搜寻匹配单词为 SignaL、Signal、signaL、signal的行</p>
+<h4>重定向（了解）</h4>
+<blockquote>
+<p>和&gt;&gt;将命令输出的结果写入到（重定向）到另外的文件当中。<br>
+：将命令输出的结果<strong>覆盖</strong>到对应的文件当中</p>
+<blockquote>
+<p>：将命令输出的结果<strong>追加</strong>到对应的文件当中<br>
+cat 1.txt &gt; 2.txt      将1.txt的内容覆盖掉2.txt的内容<br>
+cat 1.txt &gt;&gt;2.txt    追加1.txt文件到2.txt后面<br>
+cat 1.txt 2.txt &gt;3.txt      将1.txt和2.txt的内容合并到3.txt文件当中</p>
+</blockquote>
+</blockquote>
+<h4>管道符命令</h4>
+<p>** | **<br>
+说明：通过管道符命令可以将一个命令的执行结果，传给另一个命令当做参数来使用。<br>
+常用的管道符命令：<br>
+more：分屏显示执行结果<br>
+grep：通过grep过滤执行结果<br>
+ls -l /usr/bin  | more<br>
+ls /usr/bin | grep '^au'</p>
+<h4>其他命令</h4>
+<p><strong>pwd</strong>：查看当前目录的路径<br>
+<strong>clear</strong>：清屏<br>
+<strong>which 工具名称</strong>：查找工具的安装位置</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 </div>
