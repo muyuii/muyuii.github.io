@@ -260,7 +260,14 @@ ls -lha /usr/bin</p>
 <strong>f键</strong>：显示下一页<br>
 <strong>q键</strong>：退出</p>
 <h4>搜索文件并显示关键字行信息</h4>
-<p><strong>grep 文件名</strong></p></div>
+<p><strong>grep '关键字' 文件名</strong><br>
+<strong>-V</strong>：显示不包含匹配文本的所有行(取反)<br>
+<strong>-n</strong>：显示匹配的行及行号）<br>
+<strong>-i</strong>：忽略大小写<br>
+grep正则表达式<br>
+<strong>^a</strong>：表示搜索的文件内容行是以a开头<br>
+<strong>ke$</strong>：表示搜索的文件内容行是以ke结尾<br>
+<strong>[Ss]igna[Ll]</strong>：匹配口中的任意一个字符，搜寻匹配单词为 SignaL、Signal、signaL、signal的行</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 </div>
