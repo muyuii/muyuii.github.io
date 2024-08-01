@@ -43,6 +43,8 @@ fedora
 ### 命令帮助（了解）
 **-help**（简洁） 例：ls -help
 **man** （详细）例：man help
+### 以管理员身份执行
+**sudo**
 ### 文件或目录常用命令
 #### 查看目录内容
 **ls**
@@ -90,6 +92,8 @@ fedora
 ### 命令帮助（了解）
 **-help**（简洁） 例：ls -help
 **man** （详细）例：man help
+### 以管理员身份执行
+**sudo**
 ### 文件或目录常用命令
 #### 查看目录内容
 **ls**
@@ -195,6 +199,8 @@ fedora</p>
 <h3>命令帮助（了解）</h3>
 <p><strong>-help</strong>（简洁） 例：ls -help<br>
 <strong>man</strong> （详细）例：man help</p>
+<h3>以管理员身份执行</h3>
+<p><strong>sudo</strong></p>
 <h3>文件或目录常用命令</h3>
 <h4>查看目录内容</h4>
 <p><strong>ls</strong><br>
@@ -228,10 +234,33 @@ ls -lha /usr/bin</p>
 <p><strong>rmdir 目录名 目录名（多个目录间用空格隔开）</strong><br>
 <strong>rmdir -p</strong>：帮助你直接将所需要的目录(包含上一级目录)删除。例：rmdir -p test1/test2/test3</p>
 <h4>删除文件或目录</h4>
-<p>-f ：force ，强制删除文件，忽略不存在的文件，不会出现警告信息；<br>
--i ：互动模式，在删除前会询问是否删除<strong>建议都带上-i，因为rm删除不可恢复</strong><br>
--r ：递归删除啊！最常用在目录的删除，删除目录及目录下的所有内容</p>
-<h4>文件或目录复制</h4></div>
+<p>**rm -f **：force ，强制删除文件，忽略不存在的文件，不会出现警告信息；<br>
+**rm -i **：互动模式，在删除前会询问是否删除  <strong>建议都带上-i，因为rm删除不可恢复</strong><br>
+**rm -r **：递归删除啊！最常用在目录的删除，删除目录及目录下的所有内容</p>
+<h4>文件或目录复制</h4>
+<p><strong>cp 源文件 目标文件</strong><br>
+<strong>-f</strong>：强制覆盖已存在文件，不提示<br>
+<strong>-i</strong>：覆盖已存在文件时，会提示<br>
+<strong>-r</strong>：复制目录及目录下的所有内容<br>
+<strong>-v</strong>：显示复制进度</p>
+<h4>文件或目录移动</h4>
+<p><strong>mv 源文件 目标文件</strong><br>
+<strong>-f</strong>：强制覆盖已存在文件，不提示<br>
+<strong>-i</strong>：覆盖已存在文件时，会提示<br>
+<strong>-v</strong>：显示复制进度</p>
+<h3>查看文件内容</h3>
+<h4>查看内容较少文件</h4>
+<p><strong>cat 文件名</strong><br>
+<strong>-b</strong>：输出非空行的行编号<br>
+<strong>-n</strong>：输出非空行的行编号</p>
+<h4>查看内容较多文件</h4>
+<p><strong>more 文件名</strong><br>
+<strong>空格</strong>：显示下一页<br>
+<strong>b键</strong>：往回翻页，显示上一页，<br>
+<strong>f键</strong>：显示下一页<br>
+<strong>q键</strong>：退出</p>
+<h4>搜索文件并显示关键字行信息</h4>
+<p><strong>grep 文件名</strong></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 </div>
