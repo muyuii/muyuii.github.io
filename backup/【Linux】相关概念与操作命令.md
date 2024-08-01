@@ -120,3 +120,14 @@ ls /usr/bin | grep '^au'
 **pwd**：查看当前目录的路径
 **clear**：清屏
 **which 工具名称**：查找工具的安装位置
+**echo string**：字符串的输出
+例：通过重定向命令删除/var/log/messages文件中的内容
+echo "" > /var/log/messages
+### 信息系统相关命令
+#### 重启和关机的命令（了解）
+重启命令:**reboot**
+关机命令:**shutdown**
+**shutdown-r now**：表示重启时，会给其他用户发送提示信息
+**shutdown -h now**：表示立刻关机
+**shutdown-h 20:25**：表示定时关机，晚上8：25定时关机
+**shutdown-h +10**：表示从当前时再往后十分钟进行关机

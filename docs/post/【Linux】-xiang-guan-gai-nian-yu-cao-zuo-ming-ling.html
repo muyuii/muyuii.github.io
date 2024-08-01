@@ -289,7 +289,18 @@ ls /usr/bin | grep '^au'</p>
 <h4>其他命令</h4>
 <p><strong>pwd</strong>：查看当前目录的路径<br>
 <strong>clear</strong>：清屏<br>
-<strong>which 工具名称</strong>：查找工具的安装位置</p></div>
+<strong>which 工具名称</strong>：查找工具的安装位置<br>
+<strong>echo string</strong>：字符串的输出<br>
+例：通过重定向命令删除/var/log/messages文件中的内容<br>
+echo "" &gt; /var/log/messages</p>
+<h3>信息系统相关命令</h3>
+<h4>重启和关机的命令（了解）</h4>
+<p>重启命令:<strong>reboot</strong><br>
+关机命令:<strong>shutdown</strong><br>
+<strong>shutdown-r now</strong>：表示重启时，会给其他用户发送提示信息<br>
+<strong>shutdown -h now</strong>：表示立刻关机<br>
+<strong>shutdown-h 20:25</strong>：表示定时关机，晚上8：25定时关机<br>
+<strong>shutdown-h +10</strong>：表示从当前时再往后十分钟进行关机</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 </div>
