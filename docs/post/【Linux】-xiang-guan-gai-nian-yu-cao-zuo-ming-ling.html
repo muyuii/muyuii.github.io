@@ -296,7 +296,57 @@ echo "" &gt; /var/log/messages</p>
 <strong>shutdown-r now</strong>：表示重启时，会给其他用户发送提示信息<br>
 <strong>shutdown -h now</strong>：表示立刻关机<br>
 <strong>shutdown-h 20:25</strong>：表示定时关机，晚上8：25定时关机<br>
-<strong>shutdown-h +10</strong>：表示从当前时再往后十分钟进行关机</p></div>
+<strong>shutdown-h +10</strong>：表示从当前时再往后十分钟进行关机</p>
+<h4>查看系统进程</h4>
+<p><strong>ps-aux丨grep '关键字'</strong><br>
+选项说明：<br>
+<strong>-a</strong>：显示所有用户的进程<br>
+<strong>-u</strong>：显示进程的详细状态<br>
+<strong>-x</strong>：显示没有控制终端进程<br>
+一般会结合grep及管道符去查找特定的进程信息<br>
+例：ps -aux | grep 'sedispatch' 查找系统进程当中包含sedispatch关键字的进程信息</p>
+<h4>实时查看系统进程信息</h4>
+<p>top<br>
+快捷键：<br>
+<strong>M（按shift+m）</strong>：可以按内存的使用率降序排列显示进程的信息<br>
+<strong>P（按shift+p）</strong>：可以按cpu的使用率降序排列显示进程的信息</p>
+<h4>关闭进程</h4>
+<p><strong>kill -9 进程ID</strong><br>
+进程id一般会通过ps命令去查看到。<br>
+-9表示的是强制的关闭对应的进程。<br>
+注意：需要注意当前执行操作的用户，普通用户不能关闭其他用户的进程，只能关闭自己打开的进程。</p>
+<h4>查看系统监听端口</h4>
+<p>**netstat [-anptu] | grep '关键字' (需要root用户操作）<br>
+选项说明：<br>
+<strong>-a</strong>：查看所有已打开的端口<br>
+<strong>-n</strong>：以数字方式显示已打开的端口，不显示别名(http:80 https:443 mysql:3306 ssh:22)<br>
+**-p **：显示对应的进程的PID<br>
+<strong>-t</strong>：显示出tcp协议的端口</p>
+<h4>查看系统监听端口-u**：显示出udp协议的端口</h4>
+<p>例：<br>
+查看当前系统中已打开的Tcp协议端口：netstat -anpt<br>
+查看当前系统中是否已打开3306的端口：netstat -anptu丨grep'3306'<br>
+查看当前系统中是否已打开http的服务：netstat -aptu丨grep 'http'</p>
+<h4>查看系统监听端口</h4>
+<p><strong>Isof -i</strong>（需要root用户操作）<br>
+<strong>Isof -i:端口号</strong>：表示查看特定的端口是否已打开。<br>
+<strong>-i</strong>：表示查看所有已打开的进程的端口<br>
+例：<br>
+查看系统所有已打开的进程端口：Isof -i<br>
+查看系统中3306的端口是否已打开：Isof -i:3306<br>
+查看系统中http的服务端口是否已打开：Isof -i:80</p>
+<h4>查看日志信息</h4>
+<p><strong>head 文件名</strong>：默认查看文件前10条信息<br>
+<strong>head -n 文件名</strong>：查看文件的前n条信息<br>
+例：<br>
+head -30 log.log 查看当前目录下log.log的前30条信息</p>
+<h4>查看日志信息</h4>
+<p><strong>tail 文件名</strong>：默认查看文件的最后10条信息<br>
+<strong>tail -n 文件名</strong>：查看文件的最后n条信息<br>
+<strong>tail -f 文件名</strong>：实时查看日志的文件信息<br>
+例子：<br>
+taill -30 log.log 查看当前目录下log.log文件的最后30条信息<br>
+tail -f log.log 实时查看当前目录下log.log文件的日志信息</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 </div>
