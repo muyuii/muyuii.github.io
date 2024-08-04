@@ -184,3 +184,30 @@ tail -f log.log 实时查看当前目录下log.log文件的日志信息
 #### 查看操作系统信息
 **cat/proc/version**：查看当前操作系统版本信息
 **cat/etc/issue**：查看版本当前操作系统发行信息
+### 用户权限与管理
+#### 用户权限概念（了解）
+![image](https://github.com/user-attachments/assets/a0dcb910-a7fd-4abe-9287-6e50766b38d8)
+![image](https://github.com/user-attachments/assets/91db05f4-8a33-45cc-a268-f5eb8a7dacfa)
+#### 修改用户权限-字母法
+**chmod u+rwx 1.txt**
+用户选项：
+u：表示的是所属的用户
+g：表示的是所属的用户组
+o:表示的是其他用户
+a:表示的是所有的用户
+设置选项：
++：表示增加权限
+-：表示撤消权限
+=：表示设置权限
+例子:
+chmod u+w 1.txt 表示对当前目录下的1.txt文件的当前用户增加写的权限
+chmod g-x 1.txt 表示对当前目录下的1.txt文件撤消用户组的执行权限
+chmod o=rwx 1.txt 表示对当前目录下的1.txt文件的其他用户权限设置为可读可写可执行
+#### 修改用户权限-数字法
+**chmod 755 文件名**
+![image](https://github.com/user-attachments/assets/1fb7cf93-0cdc-4a4e-b926-0dfa391873a2)
+#### 增加用户、查看登录用户
+**useradd 用户名**：增加用户
+**useradd -g 组名 用户名**：创建用户时，并指定用户的组为某组
+**who**：查看当前登录的用户
+**userdel  -r 用户名**：删除用户-r作用把用户目录都删除

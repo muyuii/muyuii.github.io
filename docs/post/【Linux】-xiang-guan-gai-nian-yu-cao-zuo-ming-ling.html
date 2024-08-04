@@ -349,7 +349,34 @@ taill -30 log.log 查看当前目录下log.log文件的最后30条信息<br>
 tail -f log.log 实时查看当前目录下log.log文件的日志信息</p>
 <h4>查看操作系统信息</h4>
 <p><strong>cat/proc/version</strong>：查看当前操作系统版本信息<br>
-<strong>cat/etc/issue</strong>：查看版本当前操作系统发行信息</p></div>
+<strong>cat/etc/issue</strong>：查看版本当前操作系统发行信息</p>
+<h3>用户权限与管理</h3>
+<h4>用户权限概念（了解）</h4>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/a0dcb910-a7fd-4abe-9287-6e50766b38d8"><img src="https://github.com/user-attachments/assets/a0dcb910-a7fd-4abe-9287-6e50766b38d8" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/91db05f4-8a33-45cc-a268-f5eb8a7dacfa"><img src="https://github.com/user-attachments/assets/91db05f4-8a33-45cc-a268-f5eb8a7dacfa" alt="image" style="max-width: 100%;"></a></p>
+<h4>修改用户权限-字母法</h4>
+<p><strong>chmod u+rwx 1.txt</strong><br>
+用户选项：<br>
+u：表示的是所属的用户<br>
+g：表示的是所属的用户组<br>
+o:表示的是其他用户<br>
+a:表示的是所有的用户<br>
+设置选项：<br>
++：表示增加权限<br>
+-：表示撤消权限<br>
+=：表示设置权限<br>
+例子:<br>
+chmod u+w 1.txt 表示对当前目录下的1.txt文件的当前用户增加写的权限<br>
+chmod g-x 1.txt 表示对当前目录下的1.txt文件撤消用户组的执行权限<br>
+chmod o=rwx 1.txt 表示对当前目录下的1.txt文件的其他用户权限设置为可读可写可执行</p>
+<h4>修改用户权限-数字法</h4>
+<p><strong>chmod 755 文件名</strong><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/1fb7cf93-0cdc-4a4e-b926-0dfa391873a2"><img src="https://github.com/user-attachments/assets/1fb7cf93-0cdc-4a4e-b926-0dfa391873a2" alt="image" style="max-width: 100%;"></a></p>
+<h4>增加用户、查看登录用户</h4>
+<p><strong>useradd 用户名</strong>：增加用户<br>
+<strong>useradd -g 组名 用户名</strong>：创建用户时，并指定用户的组为某组<br>
+<strong>who</strong>：查看当前登录的用户<br>
+<strong>userdel  -r 用户名</strong>：删除用户-r作用把用户目录都删除</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 </div>
