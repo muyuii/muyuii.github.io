@@ -181,3 +181,6 @@ head -30 log.log 查看当前目录下log.log的前30条信息
 例子：
 taill -30 log.log 查看当前目录下log.log文件的最后30条信息
 tail -f log.log 实时查看当前目录下log.log文件的日志信息
+#### 查看操作系统信息
+**cat/proc/version**：查看当前操作系统版本信息
+**cat/etc/issue**：查看版本当前操作系统发行信息
