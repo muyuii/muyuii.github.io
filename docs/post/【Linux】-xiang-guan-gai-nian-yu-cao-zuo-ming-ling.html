@@ -56,7 +56,6 @@ ls -l、ls -a、
 ls -lh、ls -la、
 ls -lha
 ls -lha /usr/bin
-
 通配符可以匹配符合条件的文件或者目录。">
 <meta property="og:title" content="【Linux】相关概念与操作命令">
 <meta property="og:description" content="## Linux相关概念（理解为主）
@@ -105,7 +104,6 @@ ls -l、ls -a、
 ls -lh、ls -la、
 ls -lha
 ls -lha /usr/bin
-
 通配符可以匹配符合条件的文件或者目录。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://muyuii.github.io/post/%E3%80%90Linux%E3%80%91-xiang-guan-gai-nian-yu-cao-zuo-ming-ling.html">
@@ -211,8 +209,8 @@ ls、<br>
 ls -l、ls -a、<br>
 ls -lh、ls -la、<br>
 ls -lha<br>
-ls -lha /usr/bin</p>
-<p>通配符可以匹配符合条件的文件或者目录。<br>
+ls -lha /usr/bin<br>
+通配符可以匹配符合条件的文件或者目录。<br>
 ＊：表示匹配0到多个任意字符<br>
 ？：表示匹配单个任意字符<br>
 [abcd]:表示匹配括号内(a、b、c、d中的)任意的一个字符<br>
@@ -388,7 +386,47 @@ chmod o=rwx 1.txt 表示对当前目录下的1.txt文件的其他用户权限设
 <strong>exit</strong><br>
 如果是图形界面，退出当前终端。<br>
 如果是使用ssh远程登录，退出登陆账户。<br>
-如果是切换后的登陆用户，退出则返回上一个登陆账号。</p></div>
+如果是切换后的登陆用户，退出则返回上一个登陆账号。</p>
+<h3>其他命令</h3>
+<h4>查找文件（重点）</h4>
+<p><strong>find [路径] -name 文件名</strong><br>
+路径可有可无，没有的情况表示的是当前目录<br>
+文件名可以使用通配符，使用通配符时，文件名<strong>必须在引号里面</strong><br>
+例：<br>
+<strong>find . -name test.sh</strong> 在当前目录及子目录下查找名称为test.sh的文件<br>
+*<em>find . -name 'abc</em>.txt' **在当前目录及子目录下查找名称为abc开头的txt文件</p>
+<h4>软链接</h4>
+<p><strong>In -s 源文件 链接文件</strong><br>
+源文件必须使用绝对路径<br>
+不加-s参数表示的是硬链接<br>
+软链接与硬链接的区别<br>
+软链接的源文件被删除后，链接文件失效，没有意义<br>
+硬链接的源文件被删除后，链接文件还存在，链接文件的大小与源文件的大小一致<br>
+硬链接只能是普通文件，不能是文件夹</p>
+<h4>打包和解包</h4>
+<p>打包：把多个变为一个<br>
+解包：把1个提取为多个<br>
+**tar -cvf  打包文件名 文件或目录 **(打包)<br>
+<strong>tar -xvf 打包文件名 -C 路径</strong>(解包)<br>
+选项说明：<br>
+-c：创建打包文件<br>
+-v：显示出打包或解包的进度<br>
+-f：用于指定打包文件名（一般f放在选项的最后，用于指定打包的文件名)<br>
+-x：表示解包对应的文件<br>
+-C：解包指定路径</p>
+<h4>压缩与解压缩gzip</h4>
+<p>压缩文件：<br>
+<strong>tar -zcvf 压缩文件名.tar.gz 被压缩的文件或目录</strong><br>
+-z选项：调用gzip实现打包和压缩的过程<br>
+解压缩文件：<br>
+<strong>tar -zxvf 压缩文件名</strong><br>
+将压缩文件解压到指定的目录：<br>
+<strong>tar -zxvf 压缩文件名 -C目标路径</strong></p>
+<h4>压缩与解压缩</h4>
+<p>压缩文件：<br>
+<strong>tar -jcvf 压缩文件名.tar.bz2 被压缩的文件或目录</strong><br>
+解压缩：<br>
+<strong>tar -jxvf 压缩文件名.tar.bz2</strong></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 </div>
