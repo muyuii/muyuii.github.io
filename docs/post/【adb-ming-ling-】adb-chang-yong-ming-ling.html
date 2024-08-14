@@ -28,7 +28,26 @@
 **清除缓存：adb shell pm clear 包名**
 **启动应用：adb shell am 包名/activity名**
 **停止应用：adb shell am force-stop 包名**
-**获取手机日志：adb logcat>文件。">
+**获取手机日志：adb logcat>本地文件**
+**获取启动时间：adb shell am start -W 包名/activity名**
+-W：获取启动时间 -S：启动前强行停止应用（冷启动） -R 数字：启动次数
+三个参数均大写，顺序可调，-R后必须接数字
+**获取内存信息：adb shell dumpsys meminfo 包名**
+**Native/Dalvik的Heap信息若一直增长，可能发送内存泄漏**
+*Total的PSS信息是应用真正占据内存大小***
+**获取cpu信息：（推荐用top）**
+**adb shell dumpsys cpuinfo(查看当前cpu占用情况）**
+**adb shell top -s 9（-m：  -s：按一定顺序）**
+**获取流量消耗值：**
+**首先：获取userId：adb shell dumpsys packge 包名 | findstr userId**
+**获取上行流量：adb shell cat proc/uis_stat/userId/tcp_snd**
+**获取下行流量：adb shell cat proc/uis_stat/userId/tcp_rcv**
+**稳定性测试（monkey）：adb shell monkey -p 包名 -v 次数>日志文件地址**
+-p 指定包名（所有命令都在此包内执行，如不指定，则在整个系统内执行）
+-v log详细程度（最高支持-v-v-v’最详细）
+-s 指定序列
+--throttle 单步延时（数字)（每步操作间隔，单位毫秒）
+--pct-touch/motion等 点击事件。">
 <meta property="og:title" content="【adb命令】adb常用命令">
 <meta property="og:description" content="## adb常用命令
 **查看已连接设备列表：adb devices**
@@ -48,7 +67,26 @@
 **清除缓存：adb shell pm clear 包名**
 **启动应用：adb shell am 包名/activity名**
 **停止应用：adb shell am force-stop 包名**
-**获取手机日志：adb logcat>文件。">
+**获取手机日志：adb logcat>本地文件**
+**获取启动时间：adb shell am start -W 包名/activity名**
+-W：获取启动时间 -S：启动前强行停止应用（冷启动） -R 数字：启动次数
+三个参数均大写，顺序可调，-R后必须接数字
+**获取内存信息：adb shell dumpsys meminfo 包名**
+**Native/Dalvik的Heap信息若一直增长，可能发送内存泄漏**
+*Total的PSS信息是应用真正占据内存大小***
+**获取cpu信息：（推荐用top）**
+**adb shell dumpsys cpuinfo(查看当前cpu占用情况）**
+**adb shell top -s 9（-m：  -s：按一定顺序）**
+**获取流量消耗值：**
+**首先：获取userId：adb shell dumpsys packge 包名 | findstr userId**
+**获取上行流量：adb shell cat proc/uis_stat/userId/tcp_snd**
+**获取下行流量：adb shell cat proc/uis_stat/userId/tcp_rcv**
+**稳定性测试（monkey）：adb shell monkey -p 包名 -v 次数>日志文件地址**
+-p 指定包名（所有命令都在此包内执行，如不指定，则在整个系统内执行）
+-v log详细程度（最高支持-v-v-v’最详细）
+-s 指定序列
+--throttle 单步延时（数字)（每步操作间隔，单位毫秒）
+--pct-touch/motion等 点击事件。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://muyuii.github.io/post/%E3%80%90adb-ming-ling-%E3%80%91adb-chang-yong-ming-ling.html">
 <meta property="og:image" content="https://muyuii.github.io/zwhyi.svg">
@@ -127,7 +165,26 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <strong>清除缓存：adb shell pm clear 包名</strong><br>
 <strong>启动应用：adb shell am 包名/activity名</strong><br>
 <strong>停止应用：adb shell am force-stop 包名</strong><br>
-**获取手机日志：adb logcat&gt;文件</p></div>
+<strong>获取手机日志：adb logcat&gt;本地文件</strong><br>
+<strong>获取启动时间：adb shell am start -W 包名/activity名</strong><br>
+-W：获取启动时间 -S：启动前强行停止应用（冷启动） -R 数字：启动次数<br>
+三个参数均大写，顺序可调，-R后必须接数字<br>
+<strong>获取内存信息：adb shell dumpsys meminfo 包名</strong><br>
+<strong>Native/Dalvik的Heap信息若一直增长，可能发送内存泄漏</strong><br>
+<em>Total的PSS信息是应用真正占据内存大小</em>**<br>
+<strong>获取cpu信息：（推荐用top）</strong><br>
+<strong>adb shell dumpsys cpuinfo(查看当前cpu占用情况）</strong><br>
+<strong>adb shell top -s 9（-m：  -s：按一定顺序）</strong><br>
+<strong>获取流量消耗值：</strong><br>
+<strong>首先：获取userId：adb shell dumpsys packge 包名 | findstr userId</strong><br>
+<strong>获取上行流量：adb shell cat proc/uis_stat/userId/tcp_snd</strong><br>
+<strong>获取下行流量：adb shell cat proc/uis_stat/userId/tcp_rcv</strong><br>
+<strong>稳定性测试（monkey）：adb shell monkey -p 包名 -v 次数&gt;日志文件地址</strong><br>
+-p 指定包名（所有命令都在此包内执行，如不指定，则在整个系统内执行）<br>
+-v log详细程度（最高支持-v-v-v’最详细）<br>
+-s 指定序列<br>
+--throttle 单步延时（数字)（每步操作间隔，单位毫秒）<br>
+--pct-touch/motion等 点击事件</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 </div>

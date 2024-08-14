@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>muyuii</title><link>https://muyuii.github.io</link><description>祝我好运</description><copyright>muyuii</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://muyuii.github.io/zwhyi.svg</url><title>avatar</title><link>https://muyuii.github.io</link></image><lastBuildDate>Wed, 14 Aug 2024 08:03:48 +0000</lastBuildDate><managingEditor>muyuii</managingEditor><ttl>60</ttl><webMaster>muyuii</webMaster><item><title>【adb命令】adb常用命令</title><link>https://muyuii.github.io/post/%E3%80%90adb-ming-ling-%E3%80%91adb-chang-yong-ming-ling.html</link><description>## adb常用命令&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>muyuii</title><link>https://muyuii.github.io</link><description>祝我好运</description><copyright>muyuii</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://muyuii.github.io/zwhyi.svg</url><title>avatar</title><link>https://muyuii.github.io</link></image><lastBuildDate>Wed, 14 Aug 2024 14:17:40 +0000</lastBuildDate><managingEditor>muyuii</managingEditor><ttl>60</ttl><webMaster>muyuii</webMaster><item><title>【adb命令】adb常用命令</title><link>https://muyuii.github.io/post/%E3%80%90adb-ming-ling-%E3%80%91adb-chang-yong-ming-ling.html</link><description>## adb常用命令&#13;
 **查看已连接设备列表：adb devices**&#13;
 **断开连接设备：adb disconnect 手机ip**&#13;
 **无线连接设备：adb connect 手机ip（手机电脑需在同一网段）**&#13;
@@ -17,7 +17,26 @@
 **清除缓存：adb shell pm clear 包名**&#13;
 **启动应用：adb shell am 包名/activity名**&#13;
 **停止应用：adb shell am force-stop 包名**&#13;
-**获取手机日志：adb logcat&gt;文件。</description><guid isPermaLink="true">https://muyuii.github.io/post/%E3%80%90adb-ming-ling-%E3%80%91adb-chang-yong-ming-ling.html</guid><pubDate>Wed, 14 Aug 2024 02:49:36 +0000</pubDate></item><item><title>【Linux】相关概念与操作命令</title><link>https://muyuii.github.io/post/%E3%80%90Linux%E3%80%91-xiang-guan-gai-nian-yu-cao-zuo-ming-ling.html</link><description>## Linux相关概念（理解为主）&#13;
+**获取手机日志：adb logcat&gt;本地文件**&#13;
+**获取启动时间：adb shell am start -W 包名/activity名**&#13;
+-W：获取启动时间 -S：启动前强行停止应用（冷启动） -R 数字：启动次数&#13;
+三个参数均大写，顺序可调，-R后必须接数字&#13;
+**获取内存信息：adb shell dumpsys meminfo 包名**&#13;
+**Native/Dalvik的Heap信息若一直增长，可能发送内存泄漏**&#13;
+*Total的PSS信息是应用真正占据内存大小***&#13;
+**获取cpu信息：（推荐用top）**&#13;
+**adb shell dumpsys cpuinfo(查看当前cpu占用情况）**&#13;
+**adb shell top -s 9（-m：  -s：按一定顺序）**&#13;
+**获取流量消耗值：**&#13;
+**首先：获取userId：adb shell dumpsys packge 包名 | findstr userId**&#13;
+**获取上行流量：adb shell cat proc/uis_stat/userId/tcp_snd**&#13;
+**获取下行流量：adb shell cat proc/uis_stat/userId/tcp_rcv**&#13;
+**稳定性测试（monkey）：adb shell monkey -p 包名 -v 次数&gt;日志文件地址**&#13;
+-p 指定包名（所有命令都在此包内执行，如不指定，则在整个系统内执行）&#13;
+-v log详细程度（最高支持-v-v-v’最详细）&#13;
+-s 指定序列&#13;
+--throttle 单步延时（数字)（每步操作间隔，单位毫秒）&#13;
+--pct-touch/motion等 点击事件。</description><guid isPermaLink="true">https://muyuii.github.io/post/%E3%80%90adb-ming-ling-%E3%80%91adb-chang-yong-ming-ling.html</guid><pubDate>Wed, 14 Aug 2024 02:49:36 +0000</pubDate></item><item><title>【Linux】相关概念与操作命令</title><link>https://muyuii.github.io/post/%E3%80%90Linux%E3%80%91-xiang-guan-gai-nian-yu-cao-zuo-ming-ling.html</link><description>## Linux相关概念（理解为主）&#13;
 ### Linux版本&#13;
 redhat&#13;
 CentOS&#13;
