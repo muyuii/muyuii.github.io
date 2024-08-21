@@ -395,7 +395,7 @@ chmod o=rwx 1.txt 表示对当前目录下的1.txt文件的其他用户权限设
 文件名可以使用通配符，使用通配符时，文件名<strong>必须在引号里面</strong><br>
 例：<br>
 <strong>find . -name test.sh</strong> 在当前目录及子目录下查找名称为test.sh的文件<br>
-*<em>find . -name 'abc</em>.txt' **在当前目录及子目录下查找名称为abc开头的txt文件</p>
+find . -name 'abc*.txt' 在当前目录及子目录下查找名称为abc开头的txt文件</p>
 <h4>软链接</h4>
 <p><strong>In -s 源文件 链接文件</strong><br>
 源文件必须使用绝对路径<br>
